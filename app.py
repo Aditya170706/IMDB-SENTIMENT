@@ -9,9 +9,10 @@ import nltk
 
 nltk.download('stopwords', quiet=True)
 from nltk.corpus import stopwords
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.sequence import pad_sequences
 
+import tf_keras
+from tf_keras.models import load_model
+from tf_keras.preprocessing.sequence import pad_sequences
 # ── Load model & tokenizer ──────────────────────────────
 @st.cache_resource
 def load_everything():
